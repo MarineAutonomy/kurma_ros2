@@ -1,8 +1,8 @@
-FROM osrf/ros:humble-desktop-full
+FROM arm64v8/ros:humble
 
-LABEL maintainer="Vallabh"
+LABEL maintainer="Akash"
 LABEL version="1.0"
-LABEL description="Docker environment for ROS2 implementation on Matsya"
+LABEL description="Docker environment for ROS2 implementation on Kurma"
 
 RUN apt-get update
 RUN apt-get -y install python3-pip wget
