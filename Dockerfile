@@ -1,4 +1,5 @@
 FROM arm64v8/ros:humble
+EXPOSE 9000
 
 LABEL maintainer="Akash"
 LABEL version="1.0"
@@ -27,7 +28,7 @@ RUN echo "export ROS_DOMAIN_ID=79" >> ~/.bashrc
 RUN echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 RUN echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
 RUN pip install digi-xbee
-RUN pip install websocket
+RUN pip install websockets
 
 
 CMD ["bash"]
