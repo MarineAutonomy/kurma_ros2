@@ -1,0 +1,1 @@
+docker build . -f Dockerfile -t abhilashiit/matsya_ros2:1.0
