@@ -1,4 +1,4 @@
-docker run -it --rm --privileged --name matsya_ros2\
+docker run -it --rm -p 9000:9000 --privileged --name matsya_ros2\
  --net=host\
  --env="DISPLAY"\
  --env ROS_DOMAIN_ID=79\

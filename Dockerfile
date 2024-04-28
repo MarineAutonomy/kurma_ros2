@@ -7,6 +7,10 @@ LABEL description="Docker environment for ROS2 implementation on Kurma"
 RUN apt-get update
 RUN apt-get -y install software-properties-common libsm6 libxext6 libxrender1 libfontconfig1 libgl1 sudo xauth python3-pip htop udev
 RUN apt-get -y install vim nano git
+RUN apt-get -y install iptables
+
+
+
 
 RUN apt-get -y install python3-pip wget
 RUN pip install --upgrade pip
